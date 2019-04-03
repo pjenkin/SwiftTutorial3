@@ -14,7 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBOutlet weak var firstNumberTxt: UITextField!
 
+    @IBOutlet weak var secondNumberTxt: UITextField!
+    
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
