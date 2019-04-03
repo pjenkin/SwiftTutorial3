@@ -34,9 +34,17 @@ class ViewController: UIViewController {
     //}
 
     @IBAction func plusBtn(_ sender: Any) {
-        result = Int(firstNumberTxt.text!)! + Int(secondNumberTxt.text!)!
-        // implicitly unwrapped optional - need to be certain that values will exist
-        resultLabel.text = String(result)
+        
+        if let _ = Int(firstNumberTxt.text!) , let _ = Int(secondNumberTxt.text!)
+        {       // try to catch non-number string input  https://stackoverflow.com/a/38159489
+            result = Int(firstNumberTxt.text!)! + Int(secondNumberTxt.text!)!
+            // implicitly unwrapped optional - need to be certain that values will exist
+            resultLabel.text = String(result)
+        } else
+        {
+            resultLabel.text = "Please type numbers"
+        }
+        
     }
     
     @IBAction func minusBtn(_ sender: Any) {
