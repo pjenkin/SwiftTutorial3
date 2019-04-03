@@ -53,32 +53,50 @@
                                 <rect key="frame" x="579" y="438" width="29" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="plusBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0M-OL-cly"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-UU-caJ">
                                 <rect key="frame" x="616" y="438" width="29" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="minusBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Oq-qe-IxG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7z-u6-wxg">
                                 <rect key="frame" x="648" y="438" width="29" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="/"/>
+                                <connections>
+                                    <action selector="divideBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yau-v1-ovr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czu-3i-EZo">
                                 <rect key="frame" x="685" y="438" width="29" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="*"/>
+                                <connections>
+                                    <action selector="mutltiplyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o3w-oR-bv9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxq-rf-FVS">
                                 <rect key="frame" x="722" y="438" width="29" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="%"/>
+                                <connections>
+                                    <action selector="mutltiplyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFF-wM-Pgc"/>
+                                    <action selector="remainderBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1hg-Vq-Q0j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="firstNumberTxt" destination="fPg-tr-JSX" id="Riv-72-5Vt"/>
+                        <outlet property="minusBtn" destination="Qct-UU-caJ" id="bp6-aH-jxK"/>
+                        <outlet property="plusBtn" destination="gRw-1I-P8N" id="bmF-PI-CVb"/>
                         <outlet property="resultLabel" destination="0Gs-6Q-vQP" id="UjL-X7-7Du"/>
                         <outlet property="secondNumberTxt" destination="auU-p9-L8b" id="AKg-YZ-257"/>
                     </connections>

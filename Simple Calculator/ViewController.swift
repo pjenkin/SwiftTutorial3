@@ -28,6 +28,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func plusBtn(_ sender: Any) {
+    }
+    
+    @IBAction func minusBtn(_ sender: Any) {
+    }
 
+    @IBAction func divideBtn(_ sender: Any) {
+    }
+    @IBAction func mutltiplyBtn(_ sender: Any) {
+    }
+    @IBAction func remainderBtn(_ sender: Any) {
+    }
 }
 
